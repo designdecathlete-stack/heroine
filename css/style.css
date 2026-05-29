@@ -291,14 +291,6 @@ ul, ol { list-style: none; }
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: auto 0 -1px 0;
-  height: 80px;
-  background: radial-gradient(ellipse at 50% 100%, #fff 20%, transparent 70%);
-  pointer-events: none;
-}
 
 .hero-inner { padding: 0 28px; text-align: center; position: relative; z-index: 2; }
 
@@ -544,27 +536,26 @@ ul, ol { list-style: none; }
 
 .photo-bubble {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255,255,255,0.95);
-  padding: 18px 26px;
-  border-radius: 8px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 24px 24px;
+  background: linear-gradient(to top, rgba(10,14,26,0.82) 0%, transparent 100%);
+  border-radius: 0 0 6px 6px;
   font-family: var(--font-serif);
-  font-size: 14px;
-  line-height: 1.9;
-  color: var(--color-dark);
-  box-shadow: 0 4px 16px rgba(31,42,68,0.1);
-  white-space: nowrap;
-  text-align: center;
-  border: 1px solid rgba(184,139,74,0.2);
+  font-size: 16px;
+  line-height: 2;
+  color: rgba(255,255,255,0.82);
+  letter-spacing: 0.08em;
+  text-align: left;
 }
 .photo-bubble strong {
-  color: var(--color-bronze-dark);
-  font-size: 17px;
+  color: #fff;
+  font-size: 22px;
   display: block;
-  margin-top: 4px;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
 }
 
 .intro-closing {
@@ -675,25 +666,25 @@ ul, ol { list-style: none; }
   padding: 0 32px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 56px;
 }
 
 .flow-step {
   position: relative;
-  padding-left: 20px;
 }
 
 .flow-num {
   position: absolute;
-  top: -6px;
-  left: -6px;
+  top: -40px;
+  left: -16px;
+  z-index: 2;
   font-family: var(--font-en);
-  font-size: 42px;
-  font-weight: 700;
-  color: var(--color-bronze);
+  font-size: 130px;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--color-navy);
   line-height: 1;
-  opacity: 0.9;
-  -webkit-text-stroke: 1px var(--color-navy);
+  opacity: 0.85;
 }
 
 .flow-img {
@@ -747,8 +738,8 @@ ul, ol { list-style: none; }
   transform: translateX(-50%);
   background: #06c755;
   color: #fff;
-  padding: 6px 22px;
-  font-size: 12px;
+  padding: 8px 26px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.08em;
   border-radius: 999px;
