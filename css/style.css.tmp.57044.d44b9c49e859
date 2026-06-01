@@ -561,7 +561,7 @@ ul, ol { list-style: none; }
 
 .flow { background: var(--color-white); padding-bottom: 60px; }
 .flow-inner {
-  padding: 0 32px 0 36px;
+  padding: 0 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -574,11 +574,11 @@ ul, ol { list-style: none; }
 
 .flow-num {
   position: absolute;
-  top: 24px;
-  left: -16px;
+  top: 0;
+  left: -8px;
   z-index: 2;
   font-family: var(--font-en);
-  font-size: 100px;
+  font-size: 130px;
   font-weight: 900;
   font-style: italic;
   color: var(--color-navy);
@@ -811,7 +811,6 @@ ul, ol { list-style: none; }
   font-style: normal;
   color: var(--color-bronze);
   font-weight: 700;
-  white-space: nowrap;
 }
 
 .philosophy-body-wrap {
@@ -1075,8 +1074,5 @@ ul, ol { list-style: none; }
   .section-title-jp { font-size: 24px; }
   .worry-title { font-size: 18px; }
   .campaign-card { margin: 0 16px; padding: 40px 18px 28px; }
-  .worry-inner, .intro, .reason-inner, .philosophy-inner, .plan-inner, .faq-inner, .info-inner, .hero-inner { padding-left: 22px; padding-right: 22px; }
-  .flow-inner { padding-left: 30px; padding-right: 22px; }
-  .hero-inner { padding: 24px 0; }
-  .hero .cta-group { padding: 0; }
+  .worry-inner, .intro, .reason-inner, .flow-inner, .philosophy-inner, .plan-inner, .faq-inner, .info-inner, .hero-inner { padding-left: 22px; padding-right: 22px; }
 }
