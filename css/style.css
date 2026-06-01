@@ -37,7 +37,7 @@
   --font-sans: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
   --font-en: 'Poppins', sans-serif;
   --font-num: 'Lato', sans-serif;
-  --col-width: 460px;
+  --col-width: 540px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -248,7 +248,7 @@ ul, ol { list-style: none; }
 
 .section-head {
   text-align: center;
-  padding: 64px 20px 40px;
+  padding: 140px 20px 40px;
 }
 
 .section-title-jp {
@@ -308,10 +308,15 @@ ul, ol { list-style: none; }
    ======================================== */
 
 .worry {
-  background: var(--color-navy-deep);
+  background:
+    linear-gradient(to bottom, rgba(10,14,26,0.72) 0%, rgba(10,14,26,0.35) 60%, rgba(10,14,26,0.55) 100%),
+    url("../assets/21_s-780x736_6914afe9-c207-4e06-8bd7-83d7777b7e40.webp") center center / cover no-repeat;
   color: #fff;
-  padding: 60px 0 0;
+  padding: 60px 0 40px;
   position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);
+  margin-bottom: -100px;
+  z-index: 1;
 }
 
 
@@ -319,7 +324,7 @@ ul, ol { list-style: none; }
 
 .worry-title {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 26px;
   color: var(--color-highlight);
   line-height: 1.7;
   margin-bottom: 32px;
@@ -338,7 +343,7 @@ ul, ol { list-style: none; }
   background: rgba(255,255,255,0.05);
   border-radius: 10px;
   border: 1px solid rgba(184,139,74,0.25);
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -352,11 +357,6 @@ ul, ol { list-style: none; }
   margin-top: 2px;
 }
 
-.worry-image {
-  margin: 0 -32px;
-  filter: grayscale(0.4) contrast(1.05);
-}
-.worry-image img { width: 100%; }
 
 /* ========================================
    intro
@@ -477,7 +477,7 @@ ul, ol { list-style: none; }
 
 .reason-lead {
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 18px;
   line-height: 2;
   margin-bottom: 24px;
   font-weight: 500;
@@ -987,7 +987,7 @@ ul, ol { list-style: none; }
   .main-col { width: 100%; max-width: 500px; }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   :root { --col-width: 100%; }
   body { font-size: 14px; }
   .hero-title { font-size: 28px; }
